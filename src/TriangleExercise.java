@@ -4,8 +4,8 @@ public class TriangleExercise {
         printOneAsterisk();
         System.out.println();
         printHorizontalLine(8);
-        System.out.println();
         printVerticalLine(3);
+        printRightTriangle(5);
     }
 
     public static void printOneAsterisk() {
@@ -16,6 +16,7 @@ public class TriangleExercise {
         for (int i = 0; i < n; i++) {
             printOneAsterisk();
         }
+        System.out.println();
     }
 
     public static void printVerticalLine(int n) {
@@ -25,4 +26,9 @@ public class TriangleExercise {
         }
     }
 
+    public static void printRightTriangle(int n) {
+        for (int i = 0; i < n; i++) {
+            printHorizontalLine(i);
+        }
+    }
 }
